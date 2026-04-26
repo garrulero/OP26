@@ -1,0 +1,50 @@
+{
+  "id_examen": "Simulacro OPE Osakidetza 2026 - Prueba Común",
+  "numero_parte": 1,
+  "preguntas": [
+    {
+      "id_pregunta": 1,
+      "enunciado": "¿En qué fecha se aprobó la Ley General de Sanidad en España?",
+      "opciones": {
+        "a": "14 de abril de 1986",
+        "b": "25 de abril de 1986",
+        "c": "14 de mayo de 1986",
+        "d": "25 de mayo de 1986"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "id_pregunta": 2,
+      "enunciado": "La estructura organizativa central de Osakidetza - Servicio Vasco de Salud cuenta con:",
+      "opciones": {
+        "a": "Dos Direcciones de División",
+        "b": "Tres Direcciones de División",
+        "c": "Cuatro Direcciones de Asistencia",
+        "d": "Siete Áreas Sanitarias"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "id_pregunta": 3,
+      "enunciado": "Según el Estatuto Marco del personal estatuario, el nombramiento de personal estatutario eventual podrá acordarse para:",
+      "opciones": {
+        "a": "Sustituir a trabajadores con derecho a reserva de plaza.",
+        "b": "Atender servicios determinados de naturaleza temporal o extraordinaria.",
+        "c": "Para el desempeño de plazas que se encuentren vacantes.",
+        "d": "Todas las anteriores son ciertas."
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "id_pregunta": 4,
+      "enunciado": "El derecho al consentimiento informado de los pacientes está regulado de forma principal en:",
+      "opciones": {
+        "a": "Constitución Española",
+        "b": "Ley 41/2002 de autonomía del paciente",
+        "c": "Ley 14/1986 General de Sanidad",
+        "d": "Estatuto de Autonomía del País Vasco"
+      },
+      "respuesta_correcta": "b"
+    }
+  ]
+}

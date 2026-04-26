@@ -1,0 +1,96 @@
+{
+  "entities": {
+    "User": {
+      "title": "Perfil de Usuario",
+      "description": "Información de la cuenta y rol",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string", "enum": ["user", "admin"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "Exam": {
+      "title": "Examen",
+      "description": "Estructura completa de un examen",
+      "type": "object",
+      "properties": {
+        "id_examen": { "type": "string" },
+        "numero_parte": { "type": "string" },
+        "preguntas": { "type": "array" },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id_examen", "preguntas"]
+    },
+    "ExamResult": {
+      "title": "Resultado de Examen",
+      "description": "Logs de intentos de examen",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string" },
+        "scorePercent": { "type": "number" },
+        "correctCount": { "type": "number" },
+        "incorrectCount": { "type": "number" },
+        "blankCount": { "type": "number" },
+        "timeElapsed": { "type": "number" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "examId", "scorePercent", "timestamp"]
+    },
+    "Report": {
+      "title": "Reporte de Pregunta",
+      "description": "Avisos de usuarios sobre errores en preguntas",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "examId": { "type": "string" },
+        "questionIndex": { "type": "number" },
+        "questionText": { "type": "string" },
+        "reason": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "resolved"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "examId", "questionIndex", "reason", "status", "createdAt"]
+    },
+    "Feedback": {
+      "title": "Feedback y Sugerencias",
+      "description": "Mensajes genéricos de usuarios informando de errores o sugerencias de mejora",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "message": { "type": "string" },
+        "type": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "resolved"] },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "message", "type", "status", "timestamp"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "Perfiles y roles"
+    },
+    "exams/{examId}": {
+      "schema": "Exam",
+      "description": "Banco de exámenes oficial"
+    },
+    "results/{resultId}": {
+      "schema": "ExamResult",
+      "description": "Historial de usuarios"
+    },
+    "reports/{reportId}": {
+      "schema": "Report",
+      "description": "Reportes de errores en preguntas"
+    },
+    "feedback/{feedbackId}": {
+      "schema": "Feedback",
+      "description": "Mensajes genéricos de usuarios"
+    }
+  }
+}

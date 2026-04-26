@@ -1,0 +1,28 @@
+{
+  "id_examen": "Simulacro Corto (2 Preguntas)",
+  "numero_parte": 1,
+  "preguntas": [
+    {
+      "id_pregunta": 1,
+      "enunciado": "¿Cuál es la capital del País Vasco (Euskadi)?",
+      "opciones": {
+        "a": "Bilbao",
+        "b": "San Sebastián (Donostia)",
+        "c": "Vitoria-Gasteiz",
+        "d": "Pamplona (Iruña)"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "id_pregunta": 2,
+      "enunciado": "En el contexto de la emergencia médica, ¿qué significa el acrónimo RCP?",
+      "opciones": {
+        "a": "Respiración Cardíaca Preventiva",
+        "b": "Readaptación Circulatoria Pulmonar",
+        "c": "Reanimación Cardiopulmonar",
+        "d": "Revisión Crítica del Paciente"
+      },
+      "respuesta_correcta": "c"
+    }
+  ]
+}

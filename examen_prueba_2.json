@@ -1,0 +1,29 @@
+{
+  "titulo": "Examen de Prueba 2 Preguntas",
+  "etiquetas": ["Prueba", "Ejemplo"],
+  "numero_parte": "1",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la capital de España?",
+      "opciones": {
+        "a": "Barcelona",
+        "b": "Sevilla",
+        "c": "Madrid",
+        "d": "Valencia",
+        "e": "Duda / Anulada"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "enunciado": "¿Cuánto es 2 + 2?",
+      "opciones": {
+        "a": "3",
+        "b": "4",
+        "c": "5",
+        "d": "6",
+        "e": "Duda / Anulada"
+      },
+      "respuesta_correcta": "b"
+    }
+  ]
+}
